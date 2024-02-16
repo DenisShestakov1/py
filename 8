@@ -1,8 +1,11 @@
 k = int(input("Введите число от 1 до 99: "))
 
-if k % 10 == 1 and k != 11:
+
+if 11 <= k <= 19:
+    print(f"Мне {k} лет")
+elif k % 10 == 1:
     print(f"Мне {k} год")
-elif k % 10 in [2, 3, 4] and k not in [12, 13, 14]:
+elif 2 <= k % 10 <= 4:
     print(f"Мне {k} года")
 else:
     print(f"Мне {k} лет")
